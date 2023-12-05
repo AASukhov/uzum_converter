@@ -1,0 +1,19 @@
+CREATE TABLE comissions (
+    CURRENCY        VARCHAR(5),
+    CURRENCY_FROM   DECIMAL(30,6),
+    CURRENCY_TO     DECIMAL(30,6),
+    PRIMARY KEY (CURRENCY)
+);
+
+CREATE TABLE accounts (
+    CURRENCY    VARCHAR(5),
+    AMOUNT      DECIMAL(30,6),
+    PRIMARY KEY (CURRENCY)
+);
+
+CREATE TABLE courses (
+    CURRENCY    VARCHAR(5),
+    RATE        DECIMAL(30,6),
+    DATE        DATE,
+    PRIMARY KEY (CURRENCY)
+);
